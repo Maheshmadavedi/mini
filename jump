@@ -1,8 +1,12 @@
-hello
-mr
-mahesh
-hii
-i m
-raj
-kojloj
-bhu
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
